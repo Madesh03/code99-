@@ -1,0 +1,262 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(224, 253, 224);
+}
+
+.navbar {
+    width: 95%;
+    display: flex;
+    background-color: beige;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    gap: 150px;
+    margin: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* background-color: rgb(67, 234, 67); */
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.tabs {
+    display: flex;
+    gap: 40px;
+    text-decoration: none;
+}
+
+.tabs a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.now button {
+    background-color: rgb(67, 234, 67);
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.tabs a:hover {
+    cursor: pointer;
+    border-bottom: 2px solid rgb(67, 234, 67);
+
+}
+
+/* -----------------------Nav--------------------- */
+.home {
+    display: flex;
+    height: 900px;
+    overflow: hidden;
+}
+
+.left {
+    width: 60%;
+    padding: 190px 50px 0px 60px;
+}
+
+.left h2 {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left h1 {
+    font-size: 90px;
+    color: rgb(67, 234, 67);
+    font-family: sans-serif;
+}
+
+.left button {
+    padding: 20px 50px;
+    border-radius: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 40px;
+}
+
+.join {
+    background-color: black;
+    color: white;
+}
+
+.us {
+    border: 3px solid rgb(67, 234, 67);
+}
+
+.right {
+    width: 40%;
+    display: flex;
+    gap: 20px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    /* position: relative; */
+    top: 20px;
+}
+
+.img1 {
+    width: 170px;
+    height: 400px;
+    background-color: bisque;
+    border-radius: 100px;
+    animation: moveup 5s linear infinite ;
+}
+
+.vector {
+    width: 100%;
+    height: 100%;
+}
+
+.img2 {
+    width: 170px;
+    height: 400px;
+    background-color: rgb(55, 47, 36);
+    border-radius: 100px;
+    animation: moveup 5s linear infinite ;
+}
+
+.sec {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: movedown 5s linear infinite ;
+}
+
+.sec1 {
+    width: 170px;
+    height: 400px;
+    background-color: rgb(226, 156, 59);
+    border-radius: 100px;
+}
+
+.sec2 {
+    width: 170px;
+    height: 400px;
+    background-color: rgb(232, 105, 237);
+    border-radius: 100px;
+}
+
+.sec3 {
+    width: 170px;
+    height: 400px;
+    background-color: rgb(117, 98, 228);
+    border-radius: 100px;
+}
+
+.third {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: moveup 5s linear infinite ;
+}
+
+.third1 {
+    width: 170px;
+    height: 400px;
+    background-color: rgb(239, 155, 106);
+    border-radius: 100px;
+}
+
+.third2 {
+    width: 170px;
+    height: 400px;
+    background-color: rgb(116, 200, 203);
+    border-radius: 100px;
+}
+
+.third3 {
+    width: 170px;
+    height: 400px;
+    background-color: rgb(126, 47, 49);
+    border-radius: 100px;
+}
+
+.third4 {
+    width: 170px;
+    height: 400px;
+    background-color: rgb(71, 67, 82);
+    border-radius: 100px;
+}
+@keyframes moveup{
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(calc(-290px * 4));
+    }
+}
+@keyframes movedown {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(calc(250px * 6));
+    }
+}
+@keyframes moveup{
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(calc(-290px * 8));
+    }
+}
+/* about */
+.table{
+    height: 200px ;
+    width: 95%;
+    background-color: rgb(25, 25, 43);
+    margin: 20px 40px;
+    border-radius: 90px 90px 0px 0px;
+    display: flex   ;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+}
+.plus{
+    font-size: 60px;
+    font-family: sans-serif;
+}
+.twosides{
+    display: flex;
+    width: 100%;
+
+}
+.leftside{
+    width: 50%;
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(94, 199, 94);
+    border-radius: 50%;
+}
+.rightside{
+    width: 50%;
+}
